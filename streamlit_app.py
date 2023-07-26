@@ -39,6 +39,12 @@ try:
 except URLError as e:
     streamlit.error()
 
+#Introducing this above structure allows us to separate the code that is loaded once from the code 
+#that should be repeated each time a new value is entered.
+#Notice there are three lines of code under the ELSE. 
+#These are important steps we will be repeating. 
+#We can pull them out into a separate bit of code called a function. 
+
 #don't run anything past here while we troubleshoot 
 streamlit.stop()
 
